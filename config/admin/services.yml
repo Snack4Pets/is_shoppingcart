@@ -9,6 +9,8 @@ services:
   Oksydan\IsShoppingcart\Controller\IsShoppingCartController:
     public: true
     class: Oksydan\IsShoppingcart\Controller\IsShoppingCartController
+    arguments:
+      $formHandler: '@oksydan.is_shoppingcart.configuration.form_handler'
 
   # config form
   oksydan.is_shoppingcart.configuration:
